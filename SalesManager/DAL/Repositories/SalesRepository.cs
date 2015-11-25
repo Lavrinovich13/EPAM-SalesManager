@@ -1,4 +1,4 @@
-﻿using DAL.Interfaces;
+﻿using DAL.AbstractRepository;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    public class SalesRepository : IDataRepository<Sale>
+    public class SalesRepository : DataRepository<Sale, SalesEntityModels.Sale>
     {
         protected SalesEntityModels.Sale ObjectToEntity(Sale item)
         {
@@ -34,48 +34,6 @@ namespace DAL.Repositories
                 ProductId = item.ProductId,
                 Sum = item.Sum
             };
-        }
-
-        public void Add(Sale item)
-        {
-            using (var context = new SalesEntityModels.SalesDB())
-            {
-                context.Sales.Add(ObjectToEntity(item));
-                context.SaveChanges();
-            }
-        }
-
-        public void Update(Sale item)
-        {
-            using (var context = new SalesEntityModels.SalesDB())
-            {
-                var sale = context.Sales.Find(item.Id);
-                context.Entry(sale).CurrentValues.SetValues(ObjectToEntity(item));
-                context.SaveChanges();
-            }
-        }
-
-        public void Remove(Sale item)
-        {
-            using (var context = new SalesEntityModels.SalesDB())
-            {
-                context.Sales.Remove(ObjectToEntity(item));
-                context.SaveChanges();
-            }
-        }
-
-        public IList<Sale> GetAll(Func<Sale, bool> predicate)
-        {
-            IList<Sale> sales;
-            using (var context = new SalesEntityModels.SalesDB())
-            {
-                sales = context
-                    .Sales
-                    .AsNoTracking()
-                    .Select(x => EntityToObject(x))
-                    .Where(predicate).ToList();
-            }
-            return sales;
         }
     }
 }
