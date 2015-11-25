@@ -1,0 +1,14 @@
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\DAL.exe.config
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\DAL.exe
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\DAL.pdb
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\SalesEntityModels.dll
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\SalesEntityModels.pdb
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\obj\Debug\DAL.exe
+C:\Users\Ksenia\Desktop\SalesManager\SalesManager\DAL\obj\Debug\DAL.pdb
