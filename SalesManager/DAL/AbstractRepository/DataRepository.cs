@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DAL.AbstractRepository
 {
     public abstract class DataRepository<T,K> : IDataRepository<T>
-        where T : class
+        where T : class, IEquatable<T>
         where K : class
     {
         protected abstract K ObjectToEntity(T item);
@@ -55,6 +55,17 @@ namespace DAL.AbstractRepository
                     .ToList();
             }
             return list;
+        }
+
+        public T GetIfExists(T item)
+        {
+            T dbItem;
+            using (var context = new SalesEntityModels.SalesDB())
+            {
+                var entityItem = context.Set<K>().ToList().Select(x => EntityToObject(x)).FirstOrDefault(x => x.Equals(item));
+                dbItem = entityItem;
+            }
+            return dbItem;
         }
     }
 }

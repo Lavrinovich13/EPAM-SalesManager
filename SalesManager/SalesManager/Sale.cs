@@ -11,6 +11,7 @@ namespace SalesEntityModels
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
     
     public partial class Sale
     {
@@ -20,7 +21,7 @@ namespace SalesEntityModels
         public int ProductId { get; set; }
         public System.DateTime Date { get; set; }
         public decimal Sum { get; set; }
-    
+
         public virtual Client Client { get; set; }
         public virtual Manager Manager { get; set; }
         public virtual Product Product { get; set; }

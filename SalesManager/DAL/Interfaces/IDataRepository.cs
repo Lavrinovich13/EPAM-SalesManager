@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    interface IDataRepository<T>
+    public interface IDataRepository<T>
         where T : class
     {
         void Add(T item);
         void Update(T item);
         void Remove(T item);
+        T GetIfExists(T item);
         IList<T> GetAll(Func<T, bool> predicate);
     }
 }

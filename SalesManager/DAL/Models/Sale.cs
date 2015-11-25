@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class Sale
+    public class Sale : IEquatable<Sale>
     {
         public int Id { get; set; }
         public int ManagerId { get; set; }
@@ -18,5 +18,14 @@ namespace DAL.Models
         public virtual Client Client { get; set; }
         public virtual Manager Manager { get; set; }
         public virtual Product Product { get; set; }
+
+        public bool Equals(Sale other)
+        {
+            return ManagerId == other.ManagerId &&
+                   ClientId == other.ClientId &&
+                   ProductId == other.ProductId &&
+                   Date == other.Date &&
+                   Sum == other.Sum;
+        }
     }
 }

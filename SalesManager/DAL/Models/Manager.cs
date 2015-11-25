@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class Manager
+    public class Manager : IEquatable<Manager>
     {
         public Manager()
         {
@@ -17,5 +17,10 @@ namespace DAL.Models
         public string LastName { get; set; }
 
         public virtual ICollection<Sale> Sales { get; set; }
+
+        public bool Equals(Manager other)
+        {
+            return LastName == other.LastName;
+        }
     }
 }

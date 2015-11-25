@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    public class SalesRepository : DataRepository<Sale, SalesEntityModels.Sale>
+    public class SaleRepository : DataRepository<Sale, SalesEntityModels.Sale>
     {
         protected override SalesEntityModels.Sale ObjectToEntity(Sale item)
         {

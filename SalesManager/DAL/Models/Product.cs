@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class Product
+    public class Product : IEquatable<Product>
     {
         public Product()
         {
@@ -17,5 +17,10 @@ namespace DAL.Models
         public string Name { get; set; }
 
         public virtual ICollection<Sale> Sales { get; set; }
+
+        public bool Equals(Product other)
+        {
+            return Name == other.Name;
+        }
     }
 }
