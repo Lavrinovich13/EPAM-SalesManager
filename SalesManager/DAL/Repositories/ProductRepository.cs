@@ -10,7 +10,7 @@ namespace DAL.Repositories
 {
     public class ProductRepository : DataRepository<Product, SalesEntityModels.Product>
     {
-        protected SalesEntityModels.Product ObjectToEntity(Product item)
+        protected override SalesEntityModels.Product ObjectToEntity(Product item)
         {
             return new SalesEntityModels.Product()
             {
@@ -19,7 +19,7 @@ namespace DAL.Repositories
             };
         }
 
-        protected Product EntityToObject(SalesEntityModels.Product item)
+        protected override Product EntityToObject(SalesEntityModels.Product item)
         {
             return new Product()
             {

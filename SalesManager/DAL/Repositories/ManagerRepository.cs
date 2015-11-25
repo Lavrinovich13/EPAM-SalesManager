@@ -10,7 +10,7 @@ namespace DAL.Repositories
 {
     public class ManagerRepository : DataRepository<Manager, SalesEntityModels.Manager>
     {
-        protected SalesEntityModels.Manager ObjectToEntity(Manager item)
+        protected override SalesEntityModels.Manager ObjectToEntity(Manager item)
         {
             return new SalesEntityModels.Manager()
             {
@@ -19,7 +19,7 @@ namespace DAL.Repositories
             };
         }
 
-        protected Manager EntityToObject(SalesEntityModels.Manager item)
+        protected override Manager EntityToObject(SalesEntityModels.Manager item)
         {
             return new Manager()
             {
