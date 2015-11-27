@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesManager", "SalesManager\SalesManager.csproj", "{D7C168DF-00CC-4934-92A3-72BE7DB36584}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSalesManager", "SalesManager\ConsoleSalesManager.csproj", "{D7C168DF-00CC-4934-92A3-72BE7DB36584}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{604C762A-D738-4923-9669-A87CCE79C934}"
 EndProject

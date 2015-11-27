@@ -8,29 +8,32 @@ using DAL.Models;
 using System.IO;
 using System.Transactions;
 using BL.Models.Interfaces;
+using BL.Reader.Interfaces;
+using BL.Reader;
+using BL.Parser;
+using DAL.Repositories;
 
 namespace BL
 {
     public class FileHandler
     {
         protected IParser _parser;
+        protected IReader _reader;
 
         protected IDataRepository<Manager> _managerRepository;
         protected IDataRepository<Client> _clientRepository;
         protected IDataRepository<Product> _productRepository;
         protected IDataRepository<Sale> _saleRepository;
 
-        public FileHandler(IParser parser, 
-            IDataRepository<Manager> managerRepository,
-            IDataRepository<Client> clientRepository,
-            IDataRepository<Product> productRepository,
-            IDataRepository<Sale> saleRepository)
+        public FileHandler()
         {
-            _parser = parser;
-            _clientRepository = clientRepository;
-            _managerRepository = managerRepository;
-            _productRepository = productRepository;
-            _saleRepository = saleRepository;
+            _reader = new LineByLineReader();
+            _parser = new CsvParser();
+
+            _clientRepository = new ClientRepository();
+            _managerRepository = new ManagerRepository();
+            _productRepository = new ProductRepository();
+            _saleRepository = new SaleRepository();
         }
 
         public void Handle(string folder, string fileName)
@@ -43,7 +46,7 @@ namespace BL
             using (var transaction = new TransactionScope())
             {
                 string d = Path.Combine(folder, fileName);
-                foreach (var line in ReadLines(Path.Combine(new[] {folder, fileName})))
+                foreach (var line in _reader.Read(Path.Combine(new[] {folder, fileName})))
                 {
                     var record = _parser.ParseRecord(line);
 
@@ -66,6 +69,7 @@ namespace BL
                 }
 
                 transaction.Complete();
+                Console.WriteLine("cancel");
             }
         }
 
@@ -81,18 +85,6 @@ namespace BL
             }
 
             return repository.GetIfExists(item);
-        }
-
-        protected IEnumerable<string> ReadLines(string path)
-        {
-            using(var reader = new StreamReader(path, Encoding.GetEncoding("windows-1251")))
-            {
-                string currentString;
-                while((currentString = reader.ReadLine())!=null)
-                {
-                    yield return currentString;
-                }
-            }
         }
     }
 }

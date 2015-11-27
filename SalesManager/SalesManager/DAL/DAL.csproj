@@ -59,10 +59,6 @@
     <Compile Include="Repositories\SaleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\EntityModels\EntityModels.csproj">
       <Project>{508f5625-81fc-4bcc-8fce-9ea785cca0f9}</Project>
       <Name>EntityModels</Name>
