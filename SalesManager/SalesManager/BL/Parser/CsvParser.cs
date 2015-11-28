@@ -12,8 +12,8 @@ namespace BL.Parser
 {
     public class CsvParser : IParser
     {
-        protected string _titlePattern = @"(\w+)_(\d{8})";
-        protected string _recordPattern = @"(\d{2}\.\d{2}\.\d{4});(\w+);(\w+);(\d+)";
+        protected string _titlePattern = @"(\w+)_(\d{8})\b";
+        protected string _recordPattern = @"(\d{2}\.\d{2}\.\d{4});(\w+);(\w+);(\w+);(\d+)";
 
         public Title ParseTitle(string title)
         {
@@ -28,7 +28,7 @@ namespace BL.Parser
 
                 return new Title(match.Groups[1].Value, date);
             }
-            throw new ArgumentException("Title {0} has incorrect format", title);
+            throw new ArgumentException(String.Format("Title {0} has incorrect format", title));
         }
 
         public Record ParseRecord(string record)
@@ -41,14 +41,14 @@ namespace BL.Parser
                 DateTime.TryParse(match.Groups[1].Value, out date);
 
                 Decimal sum;
-                Decimal.TryParse(match.Groups[4].Value, out sum);
+                Decimal.TryParse(match.Groups[5].Value, out sum);
 
                 if (date != null)
                 {
-                    return new Record(date, match.Groups[2].Value, match.Groups[3].Value, sum);
+                    return new Record(date, match.Groups[2].Value, match.Groups[3].Value, match.Groups[4].Value,  sum);
                 }
             }
-            throw new ArgumentException("Record {0} has incorrect format", record);
+            throw new ArgumentException(String.Format("Record {0} has incorrect format", record));
         }
     }
 }
