@@ -15,12 +15,14 @@ namespace DAL.Models
 
         public int Id { get; set; }
         public string LastName { get; set; }
+        public string FirstName { get; set; }
 
         public virtual ICollection<Sale> Sales { get; set; }
 
         public bool Equals(Client other)
         {
-            return LastName == other.LastName;
+            return LastName == other.LastName
+                && FirstName == other.FirstName;
         }
     }
 }
