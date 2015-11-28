@@ -45,22 +45,21 @@ namespace BL
 
             using (var transaction = new TransactionScope())
             {
-                string d = Path.Combine(folder, fileName);
                 foreach (var line in _reader.Read(Path.Combine(new[] {folder, fileName})))
                 {
                     var record = _parser.ParseRecord(line);
 
                     var client = GetFromRepository<Client>
-                        (new Client() { LastName = record.ClientLastName }, _clientRepository);
+                        (new Client() { LastName = record.ClientLastName, FirstName = record.ClientFirstName }, _clientRepository);
 
                     var product = GetFromRepository<Product>
                         (new Product() { Name = record.ProductName }, _productRepository);
 
                     var sale = new Sale()
                       {
-                          ManagerId = manager.Id,
-                          ClientId = client.Id,
-                          ProductId = product.Id,
+                          Manager = manager,
+                          Client = client,
+                          Product = product,
                           Date = record.Date,
                           Sum = record.Sum
                       };
@@ -69,7 +68,6 @@ namespace BL
                 }
 
                 transaction.Complete();
-                Console.WriteLine("cancel");
             }
         }
 
