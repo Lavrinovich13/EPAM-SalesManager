@@ -18,10 +18,10 @@ namespace BL.Scheduler
 
         private int _delegatesQueuedOrRunning = 0;
 
-        public LimitedTaskScheduler(int maxDegreeOfParallelism)
+        public LimitedTaskScheduler(int maxCountOfTasks)
         {
-            if (maxDegreeOfParallelism < 1) throw new ArgumentOutOfRangeException("maxDegreeOfParallelism");
-            _maxDegreeOfParallelism = maxDegreeOfParallelism;
+            if (maxCountOfTasks < 1) throw new ArgumentOutOfRangeException("Invalid count of tasks equals " + maxCountOfTasks);
+            _maxDegreeOfParallelism = maxCountOfTasks;
         }
 
         protected sealed override void QueueTask(Task task)
