@@ -15,7 +15,7 @@ namespace DAL.AbstractRepository
 
         protected abstract T EntityToObject(K item);
 
-        public void Add(T item)
+        public virtual void Add(T item)
         {
             using (var context = new EntityModels.SalesDBEntities())
             {
@@ -24,7 +24,7 @@ namespace DAL.AbstractRepository
             }
         }
 
-        public void Update(T item)
+        public virtual void Update(T item)
         {
             using (var context = new EntityModels.SalesDBEntities())
             {
@@ -33,7 +33,7 @@ namespace DAL.AbstractRepository
             }
         }
 
-        public void Remove(T item)
+        public virtual void Remove(T item)
         {
             using (var context = new EntityModels.SalesDBEntities())
             {
@@ -42,7 +42,7 @@ namespace DAL.AbstractRepository
             }
         }
 
-        public IEnumerable<T> GetAll(Func<T, bool> predicate)
+        public virtual IEnumerable<T> GetAll(Func<T, bool> predicate)
         {
             IEnumerable<T> list;
             using (var context = new EntityModels.SalesDBEntities())
