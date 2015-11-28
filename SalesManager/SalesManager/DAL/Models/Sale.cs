@@ -9,9 +9,6 @@ namespace DAL.Models
     public class Sale : IEquatable<Sale>
     {
         public int Id { get; set; }
-        public int ManagerId { get; set; }
-        public int ClientId { get; set; }
-        public int ProductId { get; set; }
         public System.DateTime Date { get; set; }
         public decimal Sum { get; set; }
 
@@ -21,9 +18,9 @@ namespace DAL.Models
 
         public bool Equals(Sale other)
         {
-            return ManagerId == other.ManagerId &&
-                   ClientId == other.ClientId &&
-                   ProductId == other.ProductId &&
+            return Manager == other.Manager &&
+                   Client == other.Client &&
+                   Product == other.Product &&
                    Date == other.Date &&
                    Sum == other.Sum;
         }
