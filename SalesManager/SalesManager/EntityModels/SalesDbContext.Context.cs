@@ -17,8 +17,7 @@ namespace EntityModels
     {
         public SalesDBEntities()
             : base("name=SalesDBEntities")
-        {
-        }
+        {}
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

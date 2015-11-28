@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Clients">
       <EntityTypeMapping TypeName="SalesDBModel.Client">
         <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />
         </MappingFragment>

@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\Ksenia\Desktop\new\SalesManager\SalesManager\EntityModels\SalesDbContext.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\SalesDbContext.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.
