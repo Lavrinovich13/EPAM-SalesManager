@@ -15,7 +15,8 @@ namespace DAL.Repositories
             return new EntityModels.Client()
             {
                 Id = item.Id,
-                LastName = item.LastName
+                LastName = item.LastName,
+                FirstName = item.FirstName
             };
         }
 
@@ -24,7 +25,8 @@ namespace DAL.Repositories
             return new Client()
             {
                 Id = item.Id,
-                LastName = item.LastName
+                LastName = item.LastName,
+                FirstName = item.FirstName
             };
         }
     }

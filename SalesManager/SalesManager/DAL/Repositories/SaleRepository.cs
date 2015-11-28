@@ -15,10 +15,10 @@ namespace DAL.Repositories
             return new EntityModels.Sale()
             {
                 Id = item.Id,
-                ClientId = item.ClientId,
-                ManagerId = item.ManagerId,
+                ClientId = item.Client.Id,
+                ManagerId = item.Manager.Id,
+                ProductId = item.Product.Id,
                 Date = item.Date,
-                ProductId = item.ProductId,
                 Sum = item.Sum
             };
         }
@@ -28,10 +28,10 @@ namespace DAL.Repositories
             return new Sale()
             {
                 Id = item.Id,
-                ClientId = item.ClientId,
-                ManagerId = item.ManagerId,
+                Client = new Client() { LastName = item.Client.LastName, FirstName = item.Client.FirstName },
+                Manager = new Manager() { LastName = item.Manager.LastName },
                 Date = item.Date,
-                ProductId = item.ProductId,
+                Product = new Product() { Name = item.Product.Name },
                 Sum = item.Sum
             };
         }
