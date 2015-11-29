@@ -51,55 +51,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs">
-      <DependentUpon>SalesDbContext.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs">
-      <DependentUpon>SalesDbContext.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessedReport.cs">
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>SalesDbContext.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sale.cs">
-      <DependentUpon>SalesDbContext.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="SalesDbContext.Context.cs">
+    <Compile Include="SalesDbModels.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SalesDbContext.Context.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="SalesDbContext.cs">
+    <Compile Include="SalesDbModels.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SalesDbContext.tt</DependentUpon>
+      <DependentUpon>SalesDbModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="SalesDbContext.Designer.cs">
+    <Compile Include="SalesDbModels.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SalesDbContext.edmx</DependentUpon>
+      <DependentUpon>SalesDbModels.edmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="SalesDbContext.edmx">
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="SalesDbModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SalesDbContext.Designer.cs</LastGenOutput>
+      <LastGenOutput>SalesDbModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SalesDbContext.edmx.diagram">
-      <DependentUpon>SalesDbContext.edmx</DependentUpon>
+    <None Include="SalesDbModels.edmx.diagram">
+      <DependentUpon>SalesDbModels.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SalesDbContext.Context.tt">
+    <Content Include="SalesDbModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SalesDbContext.edmx</DependentUpon>
-      <LastGenOutput>SalesDbContext.Context.cs</LastGenOutput>
+      <DependentUpon>SalesDbModels.edmx</DependentUpon>
+      <LastGenOutput>SalesDbModels.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="SalesDbContext.tt">
+    <Content Include="SalesDbModels.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SalesDbContext.edmx</DependentUpon>
-      <LastGenOutput>SalesDbContext.cs</LastGenOutput>
+      <DependentUpon>SalesDbModels.edmx</DependentUpon>
+      <LastGenOutput>SalesDbModels.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

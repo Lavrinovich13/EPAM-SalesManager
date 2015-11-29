@@ -13,11 +13,12 @@ namespace EntityModels
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SalesDBEntities : DbContext
+    public partial class SalesDB : DbContext
     {
-        public SalesDBEntities()
-            : base("name=SalesDBEntities")
-        {}
+        public SalesDB()
+            : base("name=SalesDB")
+        {
+        }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -26,6 +27,7 @@ namespace EntityModels
     
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Manager> Managers { get; set; }
+        public virtual DbSet<ProcessedReport> ProcessedReports { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
     }

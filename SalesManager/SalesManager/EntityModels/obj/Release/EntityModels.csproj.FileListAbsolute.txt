@@ -1,0 +1,10 @@
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityModels.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityModels.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityFramework.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityFramework.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Release\EntityModels.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Release\EntityModels.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Release\EntityModels.csprojResolveAssemblyReference.cache

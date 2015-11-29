@@ -17,6 +17,6 @@ C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityMode
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Debug\EntityFramework.xml
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Debug\ru\EntityFramework.resources.dll
-C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Debug\EntityModels.csprojResolveAssemblyReference.cache
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Debug\EntityModels.dll
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\obj\Debug\EntityModels.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\EntityModels\bin\Debug\EntityModels.dll.config
