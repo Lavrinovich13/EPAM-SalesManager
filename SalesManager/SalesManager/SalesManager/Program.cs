@@ -87,20 +87,25 @@ namespace ConsoleSalesManager
             {
                 try
                 {
+                    Console.WriteLine(e.Name + " start process");
                     _fileHandler.Handle(_serverFolderPath, e.Name);
 
-                    //in transaction?
                     File.Move(
                         Path.Combine(_serverFolderPath, e.Name),
                         Path.Combine(_processedFiles, e.Name));
+
+                    Console.WriteLine(e.Name + " end process");
+
                 }
                 catch (Exception ex)
                 {
                     using (log4net.NDC.Push("Console application"))
                     {
-                        Console.WriteLine("Eroor occurs with file " + e.Name + ". " + ex.Message);
                         _logger.Warn("Eroor occurs with file by path " + e.FullPath + ". " + ex.Message);
                     }
+
+                    if (File.Exists(Path.Combine(_wrongFilesFolderPath, e.Name)))
+                        File.Delete(Path.Combine(_wrongFilesFolderPath, e.Name));
 
                     File.Move(
                          Path.Combine(_serverFolderPath, e.Name),

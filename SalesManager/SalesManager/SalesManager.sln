@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{EEFE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModels", "EntityModels\EntityModels.csproj", "{508F5625-81FC-4BCC-8FCE-9EA785CCA0F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesManagerService", "SalesManagerService\SalesManagerService.csproj", "{12D485C7-9FBC-4E21-AFE0-C2FC7D09B1EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{508F5625-81FC-4BCC-8FCE-9EA785CCA0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508F5625-81FC-4BCC-8FCE-9EA785CCA0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508F5625-81FC-4BCC-8FCE-9EA785CCA0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D485C7-9FBC-4E21-AFE0-C2FC7D09B1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D485C7-9FBC-4E21-AFE0-C2FC7D09B1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D485C7-9FBC-4E21-AFE0-C2FC7D09B1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D485C7-9FBC-4E21-AFE0-C2FC7D09B1EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
