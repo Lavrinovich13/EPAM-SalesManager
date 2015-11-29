@@ -1,0 +1,155 @@
+﻿Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется откат для сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Восстанавливается исходное состояние журнала событий для источника SalesManagerService.
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Предупреждение. Источник SalesManagerService не зарегистрирован на локальном компьютере.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется откат для сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Восстанавливается исходное состояние журнала событий для источника SalesManagerService.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется откат для сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Восстанавливается исходное состояние журнала событий для источника SalesManagerService.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Служба SalesManagerService успешно установлена.
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
+Попытка останова службы SalesManagerService.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Служба SalesManagerService успешно установлена.
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
+Попытка останова службы SalesManagerService.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Служба SalesManagerService успешно установлена.
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Служба SalesManagerService успешно установлена.
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
+Выполняется установка сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Устанавливается служба SalesManagerService...
+Служба SalesManagerService успешно установлена.
+Создается исходный EventLog SalesManagerService в журнале Application...
+Выполняется фиксация сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление сборки 'C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.InstallLog
+   assemblypath = C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\SalesManagerService.exe
+Выполняется удаление источника EventLog SalesManagerService.
+Выполняется удаление службы SalesManagerService из системы...
+Служба SalesManagerService успешно удалена из системы.
