@@ -12,7 +12,7 @@ namespace DAL.Interfaces
         void Add(T item);
         void Update(T item);
         void Remove(T item);
-        T GetIfExists(T item);
+        T FindByFields(T item);
         IEnumerable<T> GetAll(Func<T, bool> predicate);
     }
 }

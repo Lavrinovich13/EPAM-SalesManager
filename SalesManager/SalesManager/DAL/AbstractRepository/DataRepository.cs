@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.AbstractRepository
 {
-    public abstract class DataRepository<T,K> : IDataRepository<T>
+    public abstract class DataRepository<T, K> : IDataRepository<T>
         where T : class, IEquatable<T>
         where K : class
     {
@@ -17,7 +17,7 @@ namespace DAL.AbstractRepository
 
         public virtual void Add(T item)
         {
-            using (var context = new EntityModels.SalesDBEntities())
+            using (var context = new EntityModels.SalesDB())
             {
                 context.Entry(ObjectToEntity(item)).State = System.Data.Entity.EntityState.Added;
                 context.SaveChanges();
@@ -26,7 +26,7 @@ namespace DAL.AbstractRepository
 
         public virtual void Update(T item)
         {
-            using (var context = new EntityModels.SalesDBEntities())
+            using (var context = new EntityModels.SalesDB())
             {
                 context.Entry(ObjectToEntity(item)).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
@@ -35,7 +35,7 @@ namespace DAL.AbstractRepository
 
         public virtual void Remove(T item)
         {
-            using (var context = new EntityModels.SalesDBEntities())
+            using (var context = new EntityModels.SalesDB())
             {
                 context.Entry(ObjectToEntity(item)).State = System.Data.Entity.EntityState.Deleted;
                 context.SaveChanges();
@@ -45,7 +45,7 @@ namespace DAL.AbstractRepository
         public virtual IEnumerable<T> GetAll(Func<T, bool> predicate)
         {
             IEnumerable<T> list;
-            using (var context = new EntityModels.SalesDBEntities())
+            using (var context = new EntityModels.SalesDB())
             {
                 list = context
                     .Set<K>()
@@ -57,10 +57,10 @@ namespace DAL.AbstractRepository
             return list ?? new List<T>();
         }
 
-        public virtual T GetIfExists(T item)
+        public virtual T FindByFields(T item)
         {
             T dbItem;
-            using (var context = new EntityModels.SalesDBEntities())
+            using (var context = new EntityModels.SalesDB())
             {
                 var entityItem = context
                     .Set<K>()

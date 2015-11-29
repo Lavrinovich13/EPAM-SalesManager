@@ -1,0 +1,13 @@
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\DAL.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\DAL.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityFramework.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityModels.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityModels.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityFramework.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\obj\Release\DAL.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\DAL\obj\Release\DAL.pdb
