@@ -17,14 +17,10 @@ namespace BL.Parser
 
         public Title ParseTitle(string title)
         {
-            if(Regex.IsMatch(title, _titlePattern))
+            Match match;
+            if ((match = Regex.Match(title, _titlePattern)).Success)
             {
-                var match = Regex.Match(title, _titlePattern);
-
-                var d = match.Groups[2].Value;
-
-                DateTime date;
-                DateTime.TryParseExact(match.Groups[2].Value, "ddMMyyyy", null, DateTimeStyles.None, out date);
+                var date  = DateTime.ParseExact(match.Groups[2].Value, "ddMMyyyy", null);
 
                 return new Title(match.Groups[1].Value, date);
             }
@@ -33,20 +29,13 @@ namespace BL.Parser
 
         public Record ParseRecord(string record)
         {
-            if (Regex.IsMatch(record, _recordPattern))
+            Match match;
+            if ((match = Regex.Match(record, _recordPattern)).Success)
             {
-                var match = Regex.Match(record, _recordPattern);
-
-                DateTime date;
-                DateTime.TryParse(match.Groups[1].Value, out date);
-
-                Decimal sum;
-                Decimal.TryParse(match.Groups[5].Value, out sum);
-
-                if (date != null)
-                {
-                    return new Record(date, match.Groups[2].Value, match.Groups[3].Value, match.Groups[4].Value,  sum);
-                }
+                var date = DateTime.Parse(match.Groups[1].Value);
+                var sum = Decimal.Parse(match.Groups[5].Value);
+                
+                return new Record(date, match.Groups[2].Value, match.Groups[3].Value, match.Groups[4].Value,  sum);
             }
             throw new ArgumentException(String.Format("Record {0} has incorrect format", record));
         }

@@ -20,7 +20,8 @@ namespace BL.Scheduler
 
         public LimitedTaskScheduler(int maxCountOfTasks)
         {
-            if (maxCountOfTasks < 1) throw new ArgumentOutOfRangeException("Invalid count of tasks equals " + maxCountOfTasks);
+            if (maxCountOfTasks < 1)
+                throw new ArgumentOutOfRangeException("Invalid count of tasks, equals " + maxCountOfTasks);
             _maxDegreeOfParallelism = maxCountOfTasks;
         }
 

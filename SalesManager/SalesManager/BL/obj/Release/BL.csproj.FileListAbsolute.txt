@@ -1,0 +1,16 @@
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\BL.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\BL.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\DAL.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityFramework.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityModels.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\log4net.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\DAL.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityModels.pdb
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityFramework.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\obj\Release\BL.csprojResolveAssemblyReference.cache
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\obj\Release\BL.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\BL\obj\Release\BL.pdb
