@@ -22,6 +22,8 @@ namespace BL.ConfigValidator
 
         public void Validate()
         {
+            DAL.DatabaseValidator.DatabaseValidator.Validate();
+
             foreach(var item in _keysValidators)
             {
                 CheckConfigKey(item.Key, item.Value);

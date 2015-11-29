@@ -12,7 +12,7 @@ namespace BL.Reader
     {
         public IEnumerable<string> Read(string path)
         {
-            using (var reader = new StreamReader(path, Encoding.GetEncoding("windows-1251")))
+            using (var reader = new StreamReader(path))
             {
                 string currentString;
                 while ((currentString = reader.ReadLine()) != null)
