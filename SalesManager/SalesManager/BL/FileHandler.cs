@@ -75,8 +75,6 @@ namespace BL
                           Sum = record.Sum
                       };
 
-
-                   // Console.WriteLine("Add sale " + fileName);
                     _saleRepository.Add(sale);
                 }
                 _processedReportsRepository.Add(new ProcessedReport() { FileName = fileName });
