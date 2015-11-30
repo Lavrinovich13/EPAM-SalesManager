@@ -48,14 +48,12 @@ namespace ConsoleSalesManager
             }
             catch (ConfigurationErrorsException ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.Read();
+                _logger.Fatal("Eroor occurs with configuration. " + ex.Message);
                 return;
             }
             catch (ArgumentOutOfRangeException ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.Read();
+                _logger.Fatal("Erorr occurs with max number of connections to database. " + ex.Message);
                 return;
             }
 
@@ -99,10 +97,7 @@ namespace ConsoleSalesManager
                 }
                 catch (Exception ex)
                 {
-                    using (log4net.NDC.Push("Console application"))
-                    {
-                        _logger.Warn("Eroor occurs with file by path " + e.FullPath + ". " + ex.Message);
-                    }
+                    _logger.Warn("Eroor occurs with file by path " + e.FullPath + ". " + ex.Message);
 
                     if (File.Exists(Path.Combine(_wrongFilesFolderPath, e.Name)))
                         File.Delete(Path.Combine(_wrongFilesFolderPath, e.Name));

@@ -18,3 +18,5 @@ C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManag
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\obj\Debug\SalesManagerService.SalesManagerService.resources
+C:\Users\Ksenia\Documents\EPAM-SalesManager\SalesManager\SalesManager\SalesManagerService\bin\Debug\log4net.dll

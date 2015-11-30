@@ -1,6 +1,7 @@
 ﻿using BL;
 using BL.ConfigValidator;
 using BL.Scheduler;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,14 @@ namespace SalesManagerService
         protected static string _processedFiles;
         protected static CancellationTokenSource _cancelationTokenSource;
 
+        protected static ILog _logger;
+
         public SalesManagerService()
         {
             InitializeComponent();
+
+            log4net.Config.XmlConfigurator.Configure();
+            _logger = LogManager.GetLogger("Windows Service");
 
             ApplicationConfigValidator validator = new ApplicationConfigValidator();
             try
@@ -48,14 +54,12 @@ namespace SalesManagerService
             }
             catch (ConfigurationErrorsException ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.Read();
+                _logger.Fatal("Eroor occurs with configuration. " + ex.Message);
                 return;
             }
             catch (ArgumentOutOfRangeException ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.Read();
+                _logger.Fatal("Erorr occurs with max number of connections to database. " + ex.Message);
                 return;
             }
         }
@@ -98,6 +102,8 @@ namespace SalesManagerService
                }
                catch (Exception ex)
                {
+                   _logger.Warn("Eroor occurs with file by path " + e.FullPath + ". " + ex.Message);
+
                    if (File.Exists(Path.Combine(_wrongFilesFolderPath, e.Name)))
                        File.Delete(Path.Combine(_wrongFilesFolderPath, e.Name));
 
