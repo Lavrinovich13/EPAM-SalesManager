@@ -85,17 +85,17 @@ namespace BL
         protected T GetOrCreateAndGet<T>(T item, IDataRepository<T> repository)
             where T : class
         {
-            T buffItem = repository.FindByFields(item);
-
-            if (buffItem != null)
-                return buffItem;
-
             lock (repository)
             {
+                T buffItem = repository.FindByFields(item);
+
+                if (buffItem != null)
+                    return buffItem;
+
                 repository.Add(item);
                 buffItem = repository.FindByFields(item);
+                return buffItem;
             }
-            return buffItem;
         }
     }
 }
